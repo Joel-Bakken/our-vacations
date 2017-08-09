@@ -1,0 +1,12 @@
+{ "vacations": [{
+    "traveler": "Joel",
+    "location":  "Maui",
+    "image": "http://i.huffpost.com/gen/1408370/thumbs/o-MAUI-SEA-TURTLE-570.jpg?1",
+    "when": "1985, 1991-2000, 2002, 2004, 2005"
+  }, {
+    "traveler": "Lynn",
+    "location": "Guam",
+    "image": "http://www.tourist-destinations.net/wp-content/uploads/2013/11/Guam-aerial-view.jpg",
+    "when": "1995"
+  }]
+}

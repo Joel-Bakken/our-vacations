@@ -1,0 +1,11 @@
+<h1>Welcome to our Vacation Blog!</h1>
+
+<p>This site lists all our favorite vacation spots</p>
+
+<ul>
+  {{#each model as |vacation|}}
+    <li>{{vacation.traveler}}'s vacation to {{vacation.location}}. Visited in {{vacation.when}}.</li>
+  {{/each}}
+</ul>
+
+{{#link-to 'about'}}About{{/link-to}}
