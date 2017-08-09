@@ -4,7 +4,7 @@
 
 <ul>
   {{#each model as |vacation|}}
-    <li>{{vacation.traveler}}'s vacation to {{vacation.location}}. Visited in {{vacation.when}}.</li>
+    {{vacation-tile vacation=vacation}}
   {{/each}}
 </ul>
 

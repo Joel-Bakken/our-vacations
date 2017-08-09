@@ -1,0 +1,8 @@
+<li>
+  {{vacation.traveler}}'s vacation to {{vacation.location}}. Visited in {{vacation.when}}.
+  {{#if isImageShowing}}
+    <p><img src={{vacation.image}} alt="Vacation Image" {{action 'imageHide'}}></p>
+  {{else}}
+    <button{{action 'imageShow'}}>Show image</button>
+  {{/if}}
+</li>

@@ -19,8 +19,17 @@ A short introduction of this app could easily go here.
 * - go to routes/index.js, cut the vacations info and paste it into vacations.json
 * import vacations.json to firebase by following their on screen instructions.
 * update Firebase permissions to true for read and write
-* add Firebase apiKey, etc. data to config/environment.js 
-
+* add Firebase apiKey, etc. data to config/environment.js
+* Update the Model hook by going into app/routes/index.js:  return this.store.findAll('vacation')
+* Add a component to show the image:  $ ember g component vacation-tile
+* Move the contents of the {{#each}} loop on the app/templates/index.hbs into the vacation-tile template (app/templates/components/vacation-tile.hbs).
+* In app/templates/index.hbs alter the contents of the code between the <ul></ul> tags with:
+   {{#each model as |vacation|}}
+    {{vacation-tile vacation=vacation}}
+  {{/each}}
+* Add functionality to hide and show images for each rental.
+* Add stuff from https://www.learnhowtoprogram.com/javascript/ember-js/components-hide-show-image.
+*
 
 ## Prerequisites
 
