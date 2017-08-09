@@ -22,7 +22,8 @@ module.exports = function(environment) {
       authDomain: "our-vacations.firebaseapp.com",
       databaseURL: "https://our-vacations.firebaseio.com",
       projectId: "our-vacations",
-      storageBucket: ""
+      storageBucket: "our-vacations.appspot.com",
+      messagingSenderId: "624195983181"
     },
 
     APP: {

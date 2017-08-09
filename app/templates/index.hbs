@@ -4,6 +4,8 @@
 
 <ul>
   {{#each model as |vacation|}}
-    {{vacation-tile vacation=vacation}}
+    {{vacation-tile vacation=vacation update="update"  destroyVacation="destroyVacation"}}
   {{/each}}
 </ul>
+
+{{new-vacation saveVacation2="saveVacation3"}}

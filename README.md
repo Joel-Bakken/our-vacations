@@ -32,7 +32,11 @@ A short introduction of this app could easily go here.
 * Add a navbar to  templates/application.hbs: using bootstrap navbar as found on w3schools webpage.
 * Install bootstrap: $ ember install ember-bootstrap
 * $ ember g route contact
-* update contact.hbs
+* update contact.hbs with contact info
+* Add functionality to delete a blog post: https://www.learnhowtoprogram.com/javascript/ember-js/components-delete
+* Add functionality to add a blog post:  https://www.learnhowtoprogram.com/javascript/ember-js/components-save
+* Add functionality to update a blog post:
+https://www.learnhowtoprogram.com/javascript/ember-js/components-update
 
 
 ## Prerequisites

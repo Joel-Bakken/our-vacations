@@ -1,0 +1,30 @@
+{{#if addNewVacation}}
+  <h1>New Vacation</h1>
+  <div>
+    <form>
+      <div class="form-group">
+        <label for="traveler">Traveler</label>
+        {{input value=traveler id="traveler"}}
+      </div>
+
+      <div class="form-group">
+        <label for="location">Location</label>
+        {{input value=location id="location"}}
+      </div>
+
+      <div class="form-group">
+        <label for="when">When did you go there?</label>
+        {{input value=when id="when"}}
+      </div>
+
+      <div class="form-group">
+        <label for="image">Image URL</label>
+        {{input value=image id="image"}}
+      </div>
+
+      <button {{action 'saveVacation1'}}>Save</button>
+    </form>
+  </div>
+{{else}}
+  <button {{action 'vacationFormShow'}}>New Vacation</button>
+{{/if}}

@@ -5,4 +5,6 @@
   {{else}}
     <button{{action 'imageShow'}}>Show image</button>
   {{/if}}
+  {{update-vacation vacation=vacation update="update"}}
+  <button {{action 'delete' vacation}}>Delete Vacation</button>
 </li>

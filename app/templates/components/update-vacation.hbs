@@ -1,0 +1,30 @@
+{{#if updateVacationForm}}
+  <h4>Update {{vacation.traveler}}'s vacation.</h4>
+  <div>
+    <form>
+      <div class="form-group">
+        <label for="traveler">Traveler</label>
+        {{input value=traveler id="traveler" placeholder=vacation.traveler}}
+      </div>
+
+      <div class="form-group">
+        <label for="location">Location</label>
+        {{input value=location id="location" placeholder=vacation.location}}
+      </div>
+
+      <div class="form-group">
+        <label for="when">When did you travel to this place?</label>
+        {{input value=when id="when" placeholder=vacation.when}}
+      </div>
+
+      <div class="form-group">
+        <label for="image">Image URL</label>
+        {{input value=image id="image" placeholder=vacation.image}}
+      </div>
+
+      <button {{action 'update' vacation}}>Save</button>
+    </form>
+  </div>
+{{else}}
+  <button {{action 'updateVacationForm'}}>Update</button>
+{{/if}}
