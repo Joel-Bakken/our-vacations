@@ -29,7 +29,11 @@ A short introduction of this app could easily go here.
   {{/each}}
 * Add functionality to hide and show images for each rental.
 * Add stuff from https://www.learnhowtoprogram.com/javascript/ember-js/components-hide-show-image.
-*
+* Add a navbar to  templates/application.hbs: using bootstrap navbar as found on w3schools webpage.
+* Install bootstrap: $ ember install ember-bootstrap
+* $ ember g route contact
+* update contact.hbs
+
 
 ## Prerequisites
 
