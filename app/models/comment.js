@@ -3,5 +3,6 @@ import DS from 'ember-data';
 export default DS.Model.extend({
   author: DS.attr(),
   rating: DS.attr(),
-  content: DS.attr()
+  content: DS.attr(),
+  vacation: DS.belongsTo('vacation', { async: true })
 });

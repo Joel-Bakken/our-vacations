@@ -2,7 +2,10 @@ import Ember from 'ember';
 
 export default Ember.Route.extend({
   model() {
-    return this.store.findAll('vacation');
+    return Ember.RSVP.hash({
+      vacations: this.store.findAll('vacation'),
+      comments: this.store.findAll('comment')
+    });
   },
 
   actions: {

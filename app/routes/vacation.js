@@ -17,6 +17,15 @@ export default Ember.Route.extend({
     destroyVacation(vacation) {
       vacation.destroyRecord();
       this.transitionTo('index');
+    },
+    saveComment(params) {
+      var newComment = this.store.createRecord('comment', params);
+      var vacation = params.vacation;
+      vacation.get('comments').addObject(newComment);
+      newComment.save().then(function() {
+        return vacation.save();
+      });
+      this.transitionTo('vacation', vacation);
     }
   }
 });

@@ -57,8 +57,13 @@ https://www.learnhowtoprogram.com/javascript/ember-js/dynamic-routing-find-recor
   content: DS.attr()
 * });
 
-* Add functionality to allow visitors to add comment on individual posts.
-
+* Did this section: Return Multiple Model Types in One Model Hook
+* Update app/templates/index.hbs to include the list of comments.
+* Add functionality to allow visitors to add a new comment on individual posts - "Creating a new review".
+* Implement a relationship between vacations and comments: https://www.learnhowtoprogram.com/javascript/ember-js/model-relationships
+* Update vacation and comment models with hasMany keyword
+* Refactor new-review component...see lesson referenced above: add      vacation: this.get('vacation') to app/components/new-review.js and
+* 
 
 
 ## Prerequisites

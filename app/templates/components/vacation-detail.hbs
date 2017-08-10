@@ -3,4 +3,11 @@
 <br>
 <p><img src={{vacation.image}} alt="Vacation Image"></p>
 
+<h2>Comments</h2>
+<ul>
+  {{#each vacation.comments as |comment|}}
+    {{comment-tile comment=comment}}
+  {{/each}}
+</ul>
+
 <button {{action 'delete' vacation}}>Delete</button>

@@ -3,9 +3,17 @@
 <p>This site lists all our favorite vacation spots</p>
 
 <ul>
-  {{#each model as |vacation|}}
+  {{#each model.vacations as |vacation|}}
     {{vacation-tile vacation=vacation}}
   {{/each}}
 </ul>
 
 {{new-vacation saveVacation2="saveVacation3"}}
+
+<h2> All Comments </h2>
+
+<ul>
+  {{#each model.comments as |comment|}}
+    <li>{{comment.rating}} - {{comment.content}} - by {{comment.author}}</li>
+  {{/each}}
+</ul>
