@@ -1,8 +1,18 @@
 <li>
-   {{#link-to 'vacation' vacation.id}}{{vacation.traveler}}'s vacation to {{vacation.location}} in {{vacation.when}} {{/link-to}}
-  {{#if isImageShowing}}
-    <p><img src={{vacation.image}} alt="Vacation Image" {{action 'imageHide'}}></p>
-  {{else}}
-    <button{{action 'imageShow'}}>Show image</button>
-  {{/if}}
+  <div class="thumbnail">
+    <div class="row">
+      {{#link-to 'vacation' vacation.id}}
+      <div class="col-md-6">
+       {{vacation.traveler}}'s vacation to {{vacation.location}} in {{vacation.when}}
+      </div>
+      <div class="col-md-6">
+         {{#if isImageShowing}}
+           <p><img src={{vacation.image}} alt="Vacation Image" {{action 'imageHide'}}></p>
+         {{else}}
+           <button{{action 'imageShow'}}>Show image</button>
+         {{/if}}
+      </div>
+      {{/link-to}}
+   </div>
+  </div>
 </li>

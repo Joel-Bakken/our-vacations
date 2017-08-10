@@ -1,0 +1,14 @@
+ul {
+  list-style-type: none;
+}
+
+body {
+  background-image: url(https://static.pexels.com/photos/17727/pexels-photo.jpg);
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+
+.thumbnail {
+  background-color: transparent;
+  border-color: transparent;
+}
