@@ -12,6 +12,7 @@ actions: {
       location: this.get('location'),
       when: this.get('when'),
       image: this.get('image'),
+      detail: this.get('detail'),
     };
     this.set('updateVacationForm', false);
     this.sendAction('update', vacation, params);

@@ -37,6 +37,28 @@ A short introduction of this app could easily go here.
 * Add functionality to add a blog post:  https://www.learnhowtoprogram.com/javascript/ember-js/components-save
 * Add functionality to update a blog post:
 https://www.learnhowtoprogram.com/javascript/ember-js/components-update
+* Add functionality to add details (comments) to each vacation blog by making each vacation list item on our index a link to a template containing individual vacation details.:
+https://www.learnhowtoprogram.com/javascript/ember-js/dynamic-routing-find-record
+* $ ember g route vacation
+* Add a Dynamic segment to access each vacation Object
+* - update app/router.js to show: this.route('rental', {path: '/vacation/:vacation_id'});
+* Generate code to display details of each vacation post in it's own page:
+* - $ ember g component vacation-detail
+* Add vacation.detail to vacations.json, vacation.js, update-vacation.js, update-vacation.hbs and new-vacation.js files to allow a freeform entry of text for details about the vacation.
+* Refactor the code:  https://www.learnhowtoprogram.com/javascript/ember-js/dynamic-routing-find-record
+* Create a comment Model: https://www.learnhowtoprogram.com/javascript/ember-js/one-route-multiple-models
+* - $ ember g model comment
+* - define its attributes in app/models/comment.js:
+* import DS from 'ember-data';
+
+* export default DS.Model.extend({
+  author: DS.attr(),
+  rating: DS.attr(),
+  content: DS.attr()
+* });
+
+* Add functionality to allow visitors to add comment on individual posts.
+
 
 
 ## Prerequisites
