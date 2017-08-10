@@ -15,7 +15,12 @@ export default Ember.Route.extend({
       this.transitionTo('index');
     },
     destroyVacation(vacation) {
-      vacation.destroyRecord();
+      var comment_deletions = vacation.get('comments').map(function(comment) {
+        return comment.destroyRecord();
+      });
+      Ember.RSVP.all(comment_deletions).then(function() {
+        return vacation.destroyRecord();
+      });
       this.transitionTo('index');
     },
     saveComment(params) {
@@ -26,6 +31,10 @@ export default Ember.Route.extend({
         return vacation.save();
       });
       this.transitionTo('vacation', vacation);
+    },
+    destroyComment(comment) {
+      comment.destroyRecord();
+      this.transitionTo('index');
     }
   }
 });

@@ -64,7 +64,9 @@ https://www.learnhowtoprogram.com/javascript/ember-js/dynamic-routing-find-recor
 * Update vacation and comment models with hasMany keyword
 * Refactor new-review component...see lesson referenced above: add      vacation: this.get('vacation') to app/components/new-review.js and...
 * Change text input field for vacation.details in new-vacation.hbs and vacation-update.hbs to be a text area field for easier editing of the text: {{textarea value=detail id="detail"}}
-* Update styling in app.css to make .thumbnail color transparent and added rows and columns to vacation-tile.hbs and application.hbs files to improve visual appeal
+* Update styling in app.css to make .thumbnail color transparent and added rows and columns to vacation-tile.hbs and application.hbs files to improve visual appeal.
+* Change button label to Show Post from Show Image on the home page in vacation-tile.hbs
+* Add code to delete a comment: https://www.learnhowtoprogram.com/javascript/ember-js/deleting-model-relationships
 
 
 ## Prerequisites
