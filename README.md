@@ -62,8 +62,8 @@ https://www.learnhowtoprogram.com/javascript/ember-js/dynamic-routing-find-recor
 * Add functionality to allow visitors to add a new comment on individual posts - "Creating a new review".
 * Implement a relationship between vacations and comments: https://www.learnhowtoprogram.com/javascript/ember-js/model-relationships
 * Update vacation and comment models with hasMany keyword
-* Refactor new-review component...see lesson referenced above: add      vacation: this.get('vacation') to app/components/new-review.js and
-* 
+* Refactor new-review component...see lesson referenced above: add      vacation: this.get('vacation') to app/components/new-review.js and...
+* Change text input field for vacation.details in new-vacation.hbs and vacation-update.hbs to be a text area field for easier editing of the text: {{textarea value=detail id="detail"}}
 
 
 ## Prerequisites
